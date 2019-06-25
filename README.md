@@ -2,7 +2,7 @@
 
 Algo sobre el software libre
 
-Dependencias
+Dependencias:
 
 	texlive-most
 	inkscape
@@ -10,6 +10,10 @@ Dependencias
 
 Compilación:
 
-	$ git clone https://github.com/otreblan/comu2
-	$ cd comu2
-	$ make
+```sh
+$ git clone https://github.com/otreblan/comu2
+$ cd comu2
+$ make
+```
+
+Ms word no es software libre
