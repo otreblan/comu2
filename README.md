@@ -3,7 +3,7 @@
 
 Algo sobre el software libre
 
-Dependencias:
+## Dependencias
 
 * biber [![Arch Linux package](https://img.shields.io/archlinux/v/community/any/biber.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/community/any/biber/)
 * inkscape [![Arch Linux package](https://img.shields.io/archlinux/v/extra/x86_64/inkscape.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/x86_64/inkscape/)
@@ -12,7 +12,7 @@ Dependencias:
 * texlive-latexextra [![Arch Linux package](https://img.shields.io/archlinux/v/extra/any/texlive-latexextra.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/any/texlive-latexextra/)
 * texlive-pictures [![Arch Linux package](https://img.shields.io/archlinux/v/extra/any/texlive-pictures.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/any/texlive-pictures/)
 
-Compilación:
+## Compilación
 
 ```sh
 $ git clone https://github.com/otreblan/comu2
