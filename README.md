@@ -7,6 +7,7 @@ Algo sobre el software libre
 ## Dependencias
 
 * `biber` [![Arch Linux package](https://img.shields.io/archlinux/v/community/any/biber.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/community/any/biber/)
+* `blender-2.8-git` [![AUR version](https://img.shields.io/aur/version/blender-2.8-git.svg?style=flat-square&logo=arch-linux)](https://aur.archlinux.org/packages/blender-2.8-git/)
 * `inkscape` [![Arch Linux package](https://img.shields.io/archlinux/v/extra/x86_64/inkscape.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/x86_64/inkscape/)
 * `nerd-fonts-inconsolata-go` [![AUR version](https://img.shields.io/aur/version/nerd-fonts-inconsolata-go.svg?style=flat-square&logo=arch-linux)](https://aur.archlinux.org/packages/nerd-fonts-inconsolata-go/)
 * `texlive-bibtexextra` [![Arch Linux package](https://img.shields.io/archlinux/v/extra/any/texlive-bibtexextra.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/any/texlive-bibtexextra/)
@@ -15,10 +16,18 @@ Algo sobre el software libre
 
 ## Compilación
 
+### Pdf
 ```sh
 $ git clone https://github.com/otreblan/comu2
 $ cd comu2
 $ make
 ```
 
-Ms word no es software libre
+### Vídeo
+```sh
+$ git clone https://github.com/otreblan/comu2
+$ cd comu2/video
+$ blender-2.8 video.blend
+```
+
+Word no es software libre.
