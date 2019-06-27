@@ -9,6 +9,16 @@
 \usepackage{xcolor}
 \usepackage{fontspec}
 
+% Cosas para la bibliografía {{{
+\usepackage{csquotes}
+\usepackage[natbib,
+	backend=biber,
+	style=apa,
+	apabackref=true
+	]{biblatex}
+\addbibresource{default.bib}
+% }}}
+
 \setmonofont{InconsolataGo Nerd Font}
 
 \newcommand{\btw}{{\color{arch}\texttt{ }} }
@@ -20,6 +30,7 @@
 
 \usepackage{float}
 \usepackage{pgfplots}
+\usepackage{cancel}
 
 \pgfplotsset{compat=1.16}
 \graphicspath{ {ima/} }
@@ -37,6 +48,7 @@
 	colorlinks=true,
 	linkcolor=blue,
 	urlcolor=cyan,
+	citecolor=magenta,
 }
 %}}}
 %Esto controla a la cabecera {{{
@@ -69,7 +81,7 @@
 \section{Lluvia}
 \label{sec:Lluvia}
 
-Amenazas al software libre
+Algo sobre el software libre
 
 \begin{enumerate}
 	\item ¿Cuándo?
@@ -78,6 +90,7 @@ Amenazas al software libre
 		\subitem En el planeta tierra.
 	\item ¿Quiénes?
 		\subitem Microsoft, Github, la comunidad GNU/linux, Richard Stallman.
+		\subitem Usuarios, desarrolladores, hackers, estudiantes.
 \end{enumerate}
 % Ideas random {{{
 \subsection{Ideas random}%
@@ -95,10 +108,11 @@ Amenazas al software libre
 	\item IRC
 	\item vim
 	\item Sponsors
-	\item arch linux \btw
+	\item Arch linux \btw
 	\item Tiranía
 	\item Tengo preguntas pero no respuestas
-	\item no puedo ver el futuro
+	\item No puedo ver el futuro
+	\item Creo que debería cambiar un poco el tema.
 \end{itemize}
 % }}}
 % }}}
@@ -117,11 +131,12 @@ Amenazas al software libre
 		\begin{enumerate}
 			\item ¿Alguna vez será el año del escritorio linux?
 			\item ¿Los ancianos son capaces de usar linux?
-			\item ¿Los \textbf{normies} son capaces de usar linux?
-			\item ¿La comunidad de linux es elitista? {\tiny\color{arch}\texttt{Btw I use arch }}
+			\item \underline{¿Los \textbf{normies} son capaces de usar linux?}
+			\item \underline{¿La comunidad de linux es elitista?}
+				{\tiny\color{arch}\texttt{Btw I use arch  }}
 				\begin{enumerate}
-					\item ¿Linux es solo para nerds?
-					\item ¿Linux es solo para servidores?
+					\item \underline{¿Linux es solo para nerds?}
+					\item \underline{¿Linux es solo para servidores?}
 				\end{enumerate}
 		\end{enumerate}
 	\item ¿Realmente vale la pena no ser parte de la \textbf{botnet}?
@@ -178,6 +193,34 @@ El software libre te permitirá escapar de la tiranía del software propietario.
 De word a markdown o \LaTeX.
 De windows a Linux.
 De vivir enjaulado a la libertad.
-\end{document}
 % }}}
+% Desarrollo{{{
+\section{Desarrollo}%
+\label{sec:Desarrollo}
+
+\subsection{Profundización en la explicación}%
+
+\subsubsection{Hechos/situaciones importantes}%
+La creación de Gnu en 1984 por Richard Stallman. \citet[20]{faif}
+La compra de Github por Microsoft en el 2018. \citet{AMA}
+
+\subsubsection{Ideas/conceptos relevantes}%
+
+\subsection{Argumentaciones}%
+
+\subsubsection{Postura A}%
+Microsoft es una amenaza al software libre.
+
+\subsubsection{Postura B}%
+
+Agumento a1
+premisa a.1.1
+premisa a.1.2
+
+Agumento a2
+premisa a.2.1
+premisa a.2.2
+
+% }}}
+\end{document}
 %}}}
