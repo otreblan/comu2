@@ -6,7 +6,6 @@ Algo sobre el software libre
 
 ## Dependencias
 
-* `audacity` [![Arch Linux package](https://img.shields.io/archlinux/v/community/x86_64/audacity.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/community/x86_64/audacity/)
 * `biber` [![Arch Linux package](https://img.shields.io/archlinux/v/community/any/biber.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/community/any/biber/)
 * `blender-2.8-git` [![AUR version](https://img.shields.io/aur/version/blender-2.8-git.svg?style=flat-square&logo=arch-linux)](https://aur.archlinux.org/packages/blender-2.8-git/)
 * `inkscape` [![Arch Linux package](https://img.shields.io/archlinux/v/extra/x86_64/inkscape.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/x86_64/inkscape/)
