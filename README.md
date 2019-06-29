@@ -27,6 +27,7 @@ $ make
 ```sh
 $ git clone https://github.com/otreblan/comu2
 $ cd comu2/video
+$ ./assets/pics/render.sh
 $ blender-2.8 video.blend
 ```
 
