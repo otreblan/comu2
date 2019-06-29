@@ -18,5 +18,9 @@
 
 for PREFIX in $( ls | grep ".*\.svg" | sed "s/\(.*\)\.svg$/\1/g" )
 do
-	inkscape ${PREFIX}.svg -e ${PREFIX}.png
+	# Only render if the svg was modified or if the png doesn´t exists
+	if [[ ${PREFIX}.svg -nt ${PREFIX}.png ]]
+	then
+		inkscape ${PREFIX}.svg -e ${PREFIX}.png
+	fi
 done
