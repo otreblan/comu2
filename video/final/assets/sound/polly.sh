@@ -10,11 +10,14 @@ OUTPUTFILE=
 #===============================================================================
 function usage ()
 {
-	echo "Usage :  $0 [options] [--]
+	cat <<EOF
+Usage :  $0 [options] [--]
 
-	Options:
-	-h            Display this message
-	-v            Display script version"
+Options:
+-h				Display this message
+-i [FILE]		Input file
+-o [FILE]		Output file
+EOF
 
 }    # ----------  end of function usage  ----------
 
@@ -67,4 +70,4 @@ if [[ -z $OUTPUTFILE ]]; then
 fi
 
 
-parallel aws polly synthesize-speech --output-format ogg_vorbis --text {} --voice-id Miguel OUTPUTFILE < $INPUTFILE
+parallel aws polly synthesize-speech --output-format ogg_vorbis --text {} --voice-id Miguel $OUTPUTFILE < $INPUTFILE
