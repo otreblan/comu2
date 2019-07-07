@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, twoside]{article}
 % Opciones {{{
 \usepackage[pdfa, pdfusetitle, unicode=true]{hyperref}
 \usepackage[spanish]{babel}
@@ -60,7 +60,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \chead{ \textbf{\normalsize{Comunicación II} }}
 \fancyhf[HL]{\includesvg[height=0.8\headheight]{Utec.svg}}
-\fancyfoot[R]{\textbf{\thepage}}
+\fancyfoot[EL,OR]{\textbf{\thepage}}
 \setlength{\headheight}{52pt}
 \setlength{\textheight}{700pt}
 %}}}
@@ -205,7 +205,8 @@ De vivir enjaulado a la libertad.
 La creación de Gnu en 1984 por Richard Stallman. \citet[20]{faif}
 La compra de Github por Microsoft en el 2018. \citet{AMA}
 La creación del Windows subsystem for Linux.
-El cambio de licensia de algunos programas de Microsoft.
+%El cambio de licensia de algunos programas de Microsoft.
+Microsoft volviendo open source algunos de sus productos.
 
 \subsubsection{Ideas/conceptos relevantes}%
 
@@ -241,5 +242,9 @@ Ya no tienen al mismo CEO.
 premisa a.2.2
 
 % }}}
+\vfill
+\nocite{*}
+\printbibliography
+
 \end{document}
 %}}}
