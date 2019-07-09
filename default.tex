@@ -114,23 +114,10 @@ Ciclo 2019-1
 \newpage
 % }}}
 % Esquema {{{
-\section*{Esquema}%
 
-\begin{enumerate}
-	\item Introducción
-		\begin{enumerate}
-			\item Decepción
-			\item GNU
-		\end{enumerate}
-	\item Desarrollo
-		\begin{enumerate}
-			\item Microsoft es una amenaza
-			\item Microsoft ha cambiado
-		\end{enumerate}
-	\item Cierre
-	\item Referencias
-\end{enumerate}
+\tableofcontents
 \newpage
+
 % }}}
 % Cosas antiguas {{{
 \iffalse
@@ -243,6 +230,7 @@ Algo sobre el software libre
 % Introducción {{{
 \section{Introducción}%
 \label{sec:Introducción}
+\subsection{Decepción}%
 
 Antes que nada, la fuente ``Times New Roman"\ es propietaria \citet{NEWROMAN}.
 Me niego a usarla.
@@ -269,6 +257,9 @@ El aislamiento es un pequeño precio por la libertad.
 %De word a markdown o \LaTeX.
 %De windows a Linux.
 %De vivir alimentando a la botnet a la libertad.
+\subsection{GNU}%
+\label{sub:GNU}
+
 En 1983 Richard Stallman mandó un mensaje a net.unix-wizards \citet[89]{faif}.
 Ese fue el inicio de GNU.
 Después, en 1991, Linux Torvalds empezó a crear Linux, un kernel.
@@ -337,6 +328,8 @@ premisa a.2.2
 % Desarrollo {{{
 \section{Desarrollo}%
 \label{sec:Desarrollo}
+\subsection{Microsoft es una amenaza}%
+\label{sub:Microsoft es una amenaza}
 
 La compra podría ser prueba de lo primero.
 Como también la distribución del kernel Linux en el WSL2 (Windows subsystem for Linux). \citet{WSL2}
@@ -346,6 +339,8 @@ Parece el ``Embrace, Extend, Extinguish"\ que menciona \citet{WSL2}.
 El ``Embrace", Microsoft volvió open source algunos de sus programas.
 El ``Extend", Microsoft compró Github y creo el WSL.
 Y el ``Extinguish", la muerte de Linux.
+\subsection{Microsoft ha cambiado}%
+\label{sub:Microsoft ha cambiado}
 
 Aunque desde la compra; Github no ha sido abandonado, y ahora tiene repositorio privados gratis.
 Y también después de que ellos compraran Mojang, los de Minecraft, siguieron sacando ports de Minecraft para plataformas,
