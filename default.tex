@@ -1,18 +1,18 @@
-%Proyecto aburrido de comunicación
-%Copyright © 2019 Alberto Oporto
+% Proyecto aburrido de comunicación
+% Copyright © 2019 Alberto Oporto
 
-%This program is free software: you can redistribute it and/or modify
-%it under the terms of the GNU General Public License as published by
-%the Free Software Foundation, either version 3 of the License, or
-%(at your option) any later version.
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
 
-%This program is distributed in the hope that it will be useful,
-%but WITHOUT ANY WARRANTY; without even the implied warranty of
-%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-%GNU General Public License for more details.
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
 
-%You should have received a copy of the GNU General Public License
-%along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 \documentclass[12pt, twoside]{article}
 % Opciones {{{
@@ -36,13 +36,21 @@
 	]{biblatex}
 \addbibresource{default.bib}
 % }}}
-
-% La profesora me obligó a poner esto
+% La profesora me obligó a poner esto {{{
 \doublespacing
+
+\addto\captionsspanish{% Sacado de https://tex.stackexchange.com/questions/28516/how-to-change-the-title-of-toc
+	\renewcommand{\contentsname}%
+	{Esquema}%
+}
+% }}}
 
 \setmonofont{InconsolataGo Nerd Font}
 
-\newcommand{\btw}{{\color{arch}\texttt{ }} }
+\newcommand{\btw}{{\color{arch}\texttt{}} }
+\newcommand{\git}{{\color{git}\texttt{}} }
+
+\renewcommand{\gitMarkPref}{{\Large\git git}}
 
 %Esto sirve para poner imágenes{{{
 \usepackage{graphicx}
@@ -64,6 +72,7 @@
 \definecolor{magenta}{HTML}{6666EA}
 \definecolor{cyan}{HTML}{00AD9C}
 \definecolor{arch}{HTML}{1793D1}
+\definecolor{git}{HTML}{F54D27}
 
 \hypersetup{
 	colorlinks=true,
@@ -97,7 +106,7 @@
 		}
 %}}}
 %}}}
-%Aquí empieza el documento{{{
+% Aquí empieza el documento{{{
 \begin{document}
 % Carátula {{{
 \maketitle
@@ -359,11 +368,14 @@ Hay muchas cosas que no conozco.
 Microsoft, aún con el DRM, actualizaciones que no se pueden cancelar, la telemetría en VS code y la ausencia de muchos de sus programas en Linux,
 han ayudado al FOOS no dejando morir al repositorio de repositorios, Github.
 Ya no estamos en los 90's Microsoft ha cambiado y Linux también.
+
+Pero, ¿Algún día Linux será mainstream?
+¿O seguirá siendo algo para los que sean buenos con las computadoras?
+\btw
 % }}}
 \newpage
-\vfill
-\nocite{*}
-\printbibliography
+%\nocite{*}
+\printbibliography[heading=bibintoc, title={Lista de referencias}]
 
 \end{document}
 %}}}
