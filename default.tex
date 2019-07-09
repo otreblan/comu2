@@ -2,13 +2,14 @@
 % Opciones {{{
 \usepackage[pdfa, pdfusetitle, unicode=true]{hyperref}
 \usepackage[spanish]{babel}
-\usepackage[margin=1.5cm, a4paper]{geometry}
+\usepackage[margin=2.5cm, a4paper]{geometry}
 \usepackage{luacode}
 \usepackage[shortlabels]{enumitem}
 \usepackage{import}
 \usepackage{xcolor}
 \usepackage{fontspec}
 \usepackage[mark]{gitinfo2}
+\usepackage{setspace}
 
 % Cosas para la bibliografía {{{
 \usepackage{csquotes}
@@ -19,6 +20,9 @@
 	]{biblatex}
 \addbibresource{default.bib}
 % }}}
+
+% La profesora me obligó a poner esto
+\doublespacing
 
 \setmonofont{InconsolataGo Nerd Font}
 
@@ -63,8 +67,8 @@
 %\fancyfoot[EL,OR]{\textbf{\thepage}}
 \fancyhead[R]{\textbf{\thepage}}
 \fancyhead[L]{ \textbf{FOOS}}
-\setlength{\headheight}{52pt}
-\setlength{\textheight}{700pt}
+\setlength{\headheight}{40pt}
+\setlength{\textheight}{675pt}
 %}}}
 % Título {{{
 \title{\textbf{Microsoft y software libre}}
@@ -79,17 +83,19 @@
 %}}}
 %Aquí empieza el documento{{{
 \begin{document}
+% Carátula {{{
 \maketitle
 \vfill
 
 \noindent Sección: 9\\
 Profesora: Oriana Vidal\\
-Fecha de entrega: jueves 11 de julio\bigskip\bigskip\bigskip\bigskip\\
+Fecha de entrega: jueves 11 de julio\bigskip\bigskip\\
 Artículo académico. Entrega final\\
 Laboratorio de comunicación 2\\
 Ciclo 2019-1
 
 \thispagestyle{fancy}
+% }}}
 \newpage
 % Cosas antiguas {{{
 \iffalse
@@ -214,7 +220,7 @@ Antes que nada, la fuente ``Times New Roman"\ es propietaria. \citet{NEWROMAN}
 %De vivir alimentando a la botnet a la libertad.
 % }}}
 % Plantilla del Desarrollo{{{
-\section{platilla del desarrollo}%
+\section{Plantilla del desarrollo}%
 
 \subsection{Profundización en la explicación}%
 
